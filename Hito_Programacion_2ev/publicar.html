@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publicar</title>
+    <link rel="stylesheet" href="sttylef.css">
+</head>
+<body>
+    <h1>Publicar en el Blog</h1>
+    <form action="publicar.php" method="post">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <br><br>
+      
+      <label for="titulo">Título:</label>
+      <input type="text" id="titulo" name="titulo" required>
+
+      <br><br>
+      
+      <label for="contenido">Contenido:</label>
+      <textarea id="contenido" name="contenido" rows="10" required></textarea>
+
+      <br><br>
+      
+      <label for="fecha">Fecha de publicación:</label>
+      <input type="date" id="fecha" name="fecha" required>
+
+      <br><br>
+      
+      <label for="imagen">Imagen:</label>
+      <input type="file" id="imagen" name="imagen">
+
+      <br><br>
+      
+      <input type="submit" value="Publicar">
+    </form>
+  </body>
+</html>
